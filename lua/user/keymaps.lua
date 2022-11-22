@@ -85,6 +85,9 @@ vim.cmd([[
   augroup end
 ]])
 
+-- Inc-rename
+keymap("n", "<leader>r", ":IncRename ", opts)
+
 -- Quite
 keymap("n", "<leader>q", ":bdelete<cr>", opts)
 keymap("n", "<leader>]", ":q<cr>", opts)

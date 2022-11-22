@@ -105,6 +105,15 @@ return packer.startup(function(use)
 	-- Impatient
 	use("lewis6991/impatient.nvim")
 
+	-- Inc-rename
+	-- https://github.com/smjonas/inc-rename.nvim
+	use({
+		"smjonas/inc-rename.nvim",
+		config = function()
+			require("inc_rename").setup()
+		end,
+	})
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
