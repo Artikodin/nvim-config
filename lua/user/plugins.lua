@@ -78,6 +78,7 @@ return packer.startup(function(use)
 		run = function()
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
+		commit = "5f85a0a2b5c8e385c1232333e50c55ebdd0e0791",
 	})
 	use("p00f/nvim-ts-rainbow")
 
